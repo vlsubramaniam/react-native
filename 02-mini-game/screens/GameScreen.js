@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { View, Text, Alert, FlatList, StyleSheet } from 'react-native';
+import { View, Alert, FlatList, StyleSheet } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 
 import NumberContainer from '../components/game/NumberContainer';
@@ -110,6 +110,7 @@ function GameScreen({ userNumber, onGameOver }) {
 const styles = StyleSheet.create({
   screen: {
     flex: 1,
+    alignItems: 'center',
     padding: 24,
   },
   buttonsContainer: {
