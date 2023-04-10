@@ -1,4 +1,4 @@
-import { Text, StyleSheet } from 'react-native';
+import { Text, Platform, StyleSheet } from 'react-native';
 
 function Title({ children }) {
   return <Text style={styles.title}>{children}</Text>;
@@ -10,7 +10,8 @@ const styles = StyleSheet.create({
     fontSize: 24,
     color: 'white',
     textAlign: 'center',
-    borderWidth: 2,
+    // borderWidth: Platform.OS === 'ios' ? 2 : 0,
+    borderWidth: Platform.select({ ios: 2, android: 0 }),
     borderColor: 'white',
     padding: 12,
     maxWidth: '80%',
