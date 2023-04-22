@@ -20,7 +20,7 @@ function WelcomeScreen() {
     <View style={styles.rootContainer}>
       <Text style={styles.title}>Welcome!</Text>
       <Text>You authenticated successfully!</Text>
-      <Text>{message}</Text>
+      <Text style={styles.message}>{message}</Text>
     </View>
   );
 }
@@ -38,5 +38,8 @@ const styles = StyleSheet.create({
     fontSize: 20,
     fontWeight: 'bold',
     marginBottom: 8,
+  },
+  message: {
+    color: '#2f0cf5',
   },
 });
