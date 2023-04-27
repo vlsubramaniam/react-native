@@ -9,6 +9,7 @@ function getMapPreview(lat, lng) {
 }
 
 async function getAddress(lat, lng) {
+  return;
   const url = `https://maps.googleapis.com/maps/api/geocode/json?latlng=${lat},${lng}&key=${GOOGLE_API_KEY}`;
   const response = await fetch(url);
   if (!response.ok) {

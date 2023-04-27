@@ -4,7 +4,7 @@ import PlaceItem from './PlaceItem';
 import { Colors } from '../../constants/Colors';
 
 function PlacesList({ places }) {
-  if (!places) {
+  if (places.length === 0) {
     return (
       <View style={styles.fallbackContainer}>
         <Text style={styles.fallbackText}>No places added yet</Text>
