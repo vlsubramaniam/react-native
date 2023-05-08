@@ -1,0 +1,9 @@
+1. Create Expo account (https://expo.dev/)
+2. > npm install -g eas-cli
+3. > eas login (Enter EAS email id or username and password)
+4. > eas build:configure (inside your app). This creates eas.json file on your project folder.
+5. > Add below in eas.json under "preview"
+   > "android": {
+   > "buildType": "apk"
+   > }
+6. > eas build -p android --profile preview (App id eg: com.subvl.myrecipebook)

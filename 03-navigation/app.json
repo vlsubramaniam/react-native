@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "03-navigation",
+    "name": "My Recipe Book",
     "slug": "03-navigation",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -16,16 +16,24 @@
       "**/*"
     ],
     "ios": {
+      "buildNumber": "1.0.0",
       "supportsTablet": true
     },
     "android": {
+      "versionCode": 1,
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.subvl.myrecipebook"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "89eee294-3181-4db5-874d-ec051e236537"
+      }
     }
   }
 }
